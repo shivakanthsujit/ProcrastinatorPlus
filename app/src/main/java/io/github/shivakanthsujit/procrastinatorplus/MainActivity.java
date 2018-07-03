@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Toast.makeText(this,"Press the check mark on the right to save your task." , Toast.LENGTH_LONG).show();
         list = findViewById(R.id.list);
         add = findViewById(R.id.add);
         final CustomListAdapter whatever = new CustomListAdapter(this, tdList);

@@ -95,7 +95,8 @@ public class CustomListAdapter extends ArrayAdapter {
             public void onFocusChange(View v, boolean hasFocus) {
                 TextView t = (TextView)v;
                 String tt = t.getText().toString();
-                Toast.makeText(context,tt , Toast.LENGTH_SHORT).show();
+                td.get(pos).head = tt;
+                //Toast.makeText(context,tt , Toast.LENGTH_SHORT).show();
             }
         });
         holder.tdS.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -107,7 +108,8 @@ public class CustomListAdapter extends ArrayAdapter {
 
                 TextView t = (TextView)v;
                 String tt = t.getText().toString();
-                Toast.makeText(context,tt , Toast.LENGTH_SHORT).show();
+                td.get(pos).sub = tt;
+                //Toast.makeText(context,tt , Toast.LENGTH_SHORT).show();
             }}
         });
         holder.tdS.setOnClickListener(new View.OnClickListener() {
@@ -169,8 +171,8 @@ public class CustomListAdapter extends ArrayAdapter {
 
                 String temp = td.get(pos).head ;
 
-                //String temp2 = "Task " + td.get(pos).head + " has been created";
-                //Toast.makeText(context,temp2 , Toast.LENGTH_SHORT).show();
+                String temp2 = "Task " + td.get(pos).head + " has been created";
+                Toast.makeText(context,temp2 , Toast.LENGTH_SHORT).show();
                 }
         });
 
