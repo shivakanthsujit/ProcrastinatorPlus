@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/lo"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/bkshape">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +20,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="340dp"
+        android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -53,33 +52,21 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/confirm"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="@drawable/c" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="4" />
 
         <Button
             android:id="@+id/del"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:background="@drawable/x"
             android:gravity="center" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="4" />
 
     </LinearLayout>
 
